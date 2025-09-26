@@ -278,8 +278,7 @@ function CertificatePodium() {
         "Vidisha Patel",
         "Cristie Meadows",
         "Anna Ciura",
-        "Noeleen Kenny",
-        "Demo Demo"
+        "Noeleen Kenny"
       ],
       icon: Medal,
       height: "h-24"
