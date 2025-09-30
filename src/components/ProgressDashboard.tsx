@@ -473,7 +473,7 @@ function ReportTable({ data }: ReportTableProps) {
                 <th className="text-left p-3 text-sm font-medium">Name</th>
                 <th className="text-center p-2 text-xs font-medium">Beginner %</th>
                 <th className="text-center p-2 text-xs font-medium">Intermediate %</th>
-                <th className="text-center p-2 text-xs font-medium">Overall Expected %</th>
+                <th className="text-center p-2 text-xs font-medium">Overall Completed %</th>
               </tr>
             </thead>
             <tbody className="bg-[#FFFFFF]">
