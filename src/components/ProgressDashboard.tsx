@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
@@ -37,7 +38,7 @@ function CourseProgressBar({ percentage, current, total, type, delay = 0 }: Cour
   };
 
   const text = `${current}/${total}`;
-  const showTextInside = animatedWidth > 15; // Show text inside only if bar is wide enough
+  const showTextInside = animatedWidth > 15;
 
   return (
     <div className="w-full h-6 bg-[#FFFFFF] border border-[#02C8FF]/20 rounded-xl overflow-hidden relative shadow-inner">
@@ -45,7 +46,6 @@ function CourseProgressBar({ percentage, current, total, type, delay = 0 }: Cour
         className={`h-full ${getGradientClass()} rounded-xl flex items-center justify-center text-white text-xs font-bold transition-all duration-[2s] ease-out relative overflow-hidden`}
         style={{ width: `${animatedWidth}%` }}
       >
-        {/* Shimmer effect */}
         <div 
           className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"
           style={{
@@ -56,7 +56,6 @@ function CourseProgressBar({ percentage, current, total, type, delay = 0 }: Cour
         />
         {showTextInside && <span className="relative z-10">{text}</span>}
       </div>
-      {/* Text outside the bar when progress is too small */}
       {!showTextInside && (
         <div className="absolute inset-0 flex items-center justify-center text-[#07182D] text-xs font-bold">
           {text}
@@ -184,6 +183,7 @@ function CertificatePodium() {
         "Reyna Cerros (rcerros)",
         "Wylie Bindeman (wbindema)",
         "Shraddha Nagaraj (shranaga)",
+        "Jackie Cao (jingjcao)",
         "Amit Sah (amisah)",
         "Mike Sanburn",
         "Ellen Chu",
@@ -192,10 +192,13 @@ function CertificatePodium() {
         "Larisa Mitroshkina",
         "Armando Alonso Fortis",
         "Dave Mayer (damayer)",
+        "George Mekhael (gmekhael)",
+        "Maciej Balon (mabalon)",
         "Joe Carino (jcarino)",
         "Lorena Sanchez Chipuli (lorsanch)",
         "Cesar Lopez-Malo (clopezma)",
         "Cindy Womble (cywomble)",
+        "Hunter Moore (hunmoore)",
         "John Feddern (jfeddern)",
         "Jonathan Schwager (jschwage)",
         "Peggy David (pedavid)",
@@ -204,8 +207,11 @@ function CertificatePodium() {
         "Jonathan Burke (jonburke)",
         "Michael Kopec (michakop)",
         "Terrence Burdge (tburdge)",
+        "Hayley Gallagher",
         "Sofia Saxena",
         "James Portuguez",
+        "Sagher Chordia",
+        "Scott Dorn",
         "David Collins",
         "Greg Bennett",
         "Brenda Anderson",
@@ -217,12 +223,17 @@ function CertificatePodium() {
         "Marisela Tapia Morales",
         "Wine Pwint Phiansin",
         "Meghana Jagadeesha Rao",
+        "Binh Phan",
+        "Prasad Pichika",
         "Pratik Mehta",
+        "Sally Koay",
         "Yi Xia （夏燚）",
         "Benjamin Lee",
         "Dhruvi Contractor",
         "Rekha Angepat",
         "Omar Sanchez Breton",
+        "Martha Rodriguez",
+        "Kiran Ramu",
         "Madhavi Kottapalli",
         "Chris Bergwall",
         "Neeraja Vizaya Kumar",
@@ -230,12 +241,14 @@ function CertificatePodium() {
         "Penelope Staebler",
         "Mark Wyman",
         "Brenda Gonzalez Araya",
+        "Karthik Raghotham",
         "Ariel Morales",
         "Uma Rajaratnam",
         "Ruchika Pahwa",
         "Carey Martin",
         "Brandon Rimer",
         "Yachi Tsai",
+        "Carolina Galicia",
         "Manuel Flores",
         "Kelly Byrnes",
         "Cristie Meadows",
@@ -248,9 +261,14 @@ function CertificatePodium() {
         "Rob Williams",
         "Vandna Jain",
         "Diana Kuster",
+        "Talise Richter",
+        "Melissa Wong",
+        "Maiara De Carvalho Beraldi",
+        "Mohamud Warsame",
         "Manjunath Channappagol",
         "Maggie Deng",
         "Shanmuga Priya Venkatesan",
+        "Sumit Jakhar",
         "Ayako Kai",
         "Vinaya Nayak",
         "Vidya Karthik",
@@ -261,6 +279,7 @@ function CertificatePodium() {
         "Connor Miles",
         "Darshana Shet",
         "Garrett Selden",
+        "Kristen Edouard",
         "Zoha Haque",
         "Lu Zhao",
         "Steve Janicek",
@@ -268,17 +287,30 @@ function CertificatePodium() {
         "Sandy Zhang",
         "Suthan Setty Gunashekar",
         "Bartlomiej Nowak",
+        "Leslie Patrick Mariadas",
         "Małgorzata Jamro",
         "Tomek Gasior",
         "Aldo Lezama",
         "Amandeep Kataria",
+        "Elizabeth Rodriguez",
+        "Kay Wagner",
+        "Christina Thompson",
+        "Jordan Brown",
         "Candelaria Zucca",
         "Janet Ng",
         "Karolina Nalepa",
+        "Mahender Manik",
         "Vidisha Patel",
+        "Eduardo Seput",
         "Cristie Meadows",
         "Anna Ciura",
-        "Noeleen Kenny"
+        "Noeleen Kenny",
+        "Lukasz Rawicki",
+        "Ricardo Pinto",
+        "Iva Kushlyk",
+        "Natalia Wisniowska",
+        "Chris Kokos",
+        "Rajiv Gatha"
       ],
       icon: Medal,
       height: "h-24"
@@ -292,6 +324,7 @@ function CertificatePodium() {
         "Udit Chalana (cchalana)",
         "Jack Xia (jaxia)",
         "Cesar Lopez-Malo (clopezma)",
+        "Sofia Saxena",
         "Greg Bennett",
         "Ruchika Pahwa",
         "Darshana Shet",
@@ -307,33 +340,38 @@ function CertificatePodium() {
       bgColor: "bg-[#0A60FF]",
       employees: [
         "Nate Royer (nroyer)",
-        "Genevieve Holbrook (jennified)",
+        "Genevieve Holbrook (jennifed)",
         "Sourabh Kumar (soukumar)",
         "Udit Chalana (cchalana)",
         "Wylie Bindeman (wbindema)",
-        "Kunal Kishor (khoroz)",
-        "Sahil Bali (sabhalii)",
+        "Kunal Kishor (kkishor2)",
+        "Sahil Bali (sahbali)",
         "Varuni Garg (vargarg)",
         "Amit Sah (amisah)",
         "Joe Carino (jcarino)",
         "Cesar Lopez-Malo (clopezma)",
         "Cindy Womble (cywomble)",
         "Jonathan Schwager (jschwage)",
-        "Peggy David (peavidavid)",
+        "Peggy David (pedavid)",
         "Michael Kopec (michakop)",
         "Sofia Saxena",
         "Greg Bennett",
         "Brenda Anderson",
         "Rachel Ip",
         "Ines Barbara",
+        "Neeraja Vizaya Kumar",
+        "Kien Tran",
         "Ruchika Pahwa",
         "Brandon Rimer",
+        "Carolina Galicia",
         "Manuel Flores",
         "Kelly Byrnes",
         "Abi Ayedun",
         "Armando Palomino Calero",
-        "Vandna Patel",
+        "Vandna Jain",
+        "Vidya Karthik",
         "Darshana Shet",
+        "Lu Zhao",
         "Amandeep Kataria",
         "Vidisha Patel"
       ],
@@ -369,25 +407,16 @@ function CertificatePodium() {
                   onClick={handleCertificateClick}
                 >
                   <button
-                    className={`relative ${cert.height} w-32 ${cert.bgColor} rounded-t-lg transition-all duration-300 border-2 border-b-0 flex flex-col items-center justify-center group`}
+                    className={`relative ${cert.height} w-32 ${cert.bgColor} rounded-lg transition-all duration-300 border-2 flex flex-col items-center justify-center group`}
                   >
-                    {/* Certificate Icon */}
                     <Icon 
                       className={`w-10 h-10 mb-2 ${isBlue ? 'text-white' : cert.level === 'Green' ? 'text-white' : 'text-[#07182D]'}`}
                     />
                     
-                    {/* Certificate Level */}
                     <span className={`text-sm font-bold ${isBlue ? 'text-white' : cert.level === 'Green' ? 'text-white' : 'text-[#07182D]'}`}>
-                      {cert.level}
+                      {`${cert.level} Certificate`}
                     </span>
                   </button>
-                  
-                  {/* Podium Step Number - Now outside and aligned */}
-                  <div className={`w-32 h-8 ${cert.bgColor} border-2 border-t-0 ${cert.bgColor.includes('FFFFFF') ? 'border-[#02C8FF]' : 'border-transparent'} rounded-b-lg flex items-center justify-center`}>
-                    <span className={`text-sm font-bold ${isBlue ? 'text-white' : cert.level === 'Green' ? 'text-white' : 'text-[#07182D]'}`}>
-                      {cert.level === 'Blue' ? '1st' : cert.level === 'Green' ? '2nd' : '3rd'}
-                    </span>
-                  </div>
                 </motion.div>
               </DialogTrigger>
               
@@ -403,7 +432,6 @@ function CertificatePodium() {
                 </DialogHeader>
                 
                 <div className="mt-4">
-                  
                   <div className="max-h-80 overflow-y-auto space-y-2">
                     {cert.employees.map((employee, idx) => (
                       <div 
@@ -462,31 +490,30 @@ function ReportTable({ data }: ReportTableProps) {
                     <td className="p-3 text-sm font-medium text-[#07182D] border-r border-[#02C8FF]/20">
                       {getMedalEmoji(index)}{employee.name}
                     </td>
-                  <td className="p-2 text-sm text-center border-r border-[#02C8FF]/20 text-[#02C8FF] font-medium">
-                    {employee.beginner}
-                  </td>
-                  <td className="p-2 text-sm text-center border-r border-[#02C8FF]/20 text-[#0A60FF] font-medium">
-                    {employee.intermediate}
-                  </td>
-                  <td className="p-2 text-sm text-center text-[#07182D] font-medium">
-                    {employee.overall}
-                  </td>
+                    <td className="p-2 text-sm text-center border-r border-[#02C8FF]/20 text-[#02C8FF] font-medium">
+                      {employee.beginner}
+                    </td>
+                    <td className="p-2 text-sm text-center border-r border-[#02C8FF]/20 text-[#0A60FF] font-medium">
+                      {employee.intermediate}
+                    </td>
+                    <td className="p-2 text-sm text-center text-[#07182D] font-medium">
+                      {employee.overall}
+                    </td>
                   </tr>
                 );
               })}
-              {/* Total Row */}
               <tr className="bg-[#07182D] text-white border-t-2 border-[#07182D]">
                 <td className="p-3 text-sm font-bold border-r border-[#02C8FF]/30">
                   Total
                 </td>
                 <td className="p-2 text-sm text-center border-r border-[#02C8FF]/30 font-bold">
-                  41.0
+                  51.1
                 </td>
                 <td className="p-2 text-sm text-center border-r border-[#02C8FF]/30 font-bold">
-                  8.3
+                  10.3
                 </td>
                 <td className="p-2 text-sm text-center font-bold">
-                  32.8
+                  40.9
                 </td>
               </tr>
             </tbody>
@@ -499,17 +526,16 @@ function ReportTable({ data }: ReportTableProps) {
 
 export function ProgressDashboard() {
   const reportData = [
-    { name: "Chris Kokos", beginner: 55.8, intermediate: 10.9, overall: 44.6 },
-    { name: "Patricia Diaz", beginner: 43.1, intermediate: 19.0, overall: 37.1 },
-    { name: "Rajiv Gatha", beginner: 37.0, intermediate: 4.3, overall: 28.8 },
-    { name: "David Collins", beginner: 32.2, intermediate: 13.3, overall: 27.5 },
-    { name: "Eduardo Seput", beginner: 33.8, intermediate: 4.3, overall: 26.4 },
-    { name: "Mohamud Warsame", beginner: 33.3, intermediate: 0.0, overall: 25.0 }
+    { name: "Chris Kokos", beginner: 67.8, intermediate: 18.9, overall: 55.6 },
+    { name: "Patricia Diaz", beginner: 47.6, intermediate: 21.4, overall: 41.1 },
+    { name: "Rajiv Gatha", beginner: 46.8, intermediate: 4.2, overall: 36.1 },
+    { name: "David Collins", beginner: 36.7, intermediate: 13.3, overall: 30.8 },
+    { name: "Eduardo Seput", beginner: 50.5, intermediate: 5.7, overall: 39.3 },
+    { name: "Mohamud Warsame", beginner: 50, intermediate: 0, overall: 37.5 }
   ];
 
   return (
     <div className="max-w-[1200px] mx-auto p-6">
-      {/* Cisco Logo */}
       <div className="flex justify-center mb-8">
         <img 
           src={ciscoLogo} 
@@ -518,64 +544,57 @@ export function ProgressDashboard() {
         />
       </div>
       
-      {/* Certificate Podium - Full Width Below Logo */}
       <CertificatePodium />
       
       <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch mt-8">
-        {/* Left Column - Course Progress */}
         <div className="lg:w-1/2 flex">
           <div className="p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] border-l-4 border-[#02C8FF] bg-[#FFFFFF] flex-1">
-            {/* Header */}
             <h3 className="mt-0 text-[#07182D] text-lg border-b-2 border-[#02C8FF]/20 pb-2.5 mb-5 text-center">
               📊 Expected Course Progress Dashboard
             </h3>
 
-            {/* Progress Items */}
             <div className="space-y-5">
-              {/* Beginner Courses */}
               <div className="my-5">
                 <div className="flex justify-between mb-2 font-medium text-[#07182D]">
                   <span>Beginner Courses</span>
-                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#02C8FF]">41%</span>
+                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#02C8FF]">51.1%</span>
                 </div>
-                <CourseProgressBar percentage={41} current={519} total={1266} type="beginner" delay={500} />
+                <CourseProgressBar percentage={51.1} current={656} total={1284} type="beginner" delay={500} />
               </div>
 
-              {/* Intermediate Courses */}
               <div className="my-5">
                 <div className="flex justify-between mb-2 font-medium text-[#07182D]">
                   <span>Intermediate Courses</span>
-                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#0A60FF]">8.3%</span>
+                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#0A60FF]">10.3%</span>
                 </div>
-                <CourseProgressBar percentage={8.3} current={35} total={422} type="intermediate" delay={800} />
+                <CourseProgressBar percentage={10.3} current={44} total={428} type="intermediate" delay={800} />
               </div>
             </div>
 
-            {/* Summary Stats */}
             <div className="mt-7 p-5 bg-gradient-to-br from-[#02C8FF]/5 to-[#0A60FF]/5 rounded-xl text-center">
               <h4 className="text-[#02C8FF] mb-4 text-base">Summary Statistics</h4>
               <div className="flex justify-around flex-wrap gap-4">
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={554} delay={0} />
+                    <AnimatedCounter target={700} delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">Completed</div>
                 </div>
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={1688} delay={0} />
+                    <AnimatedCounter target={1712} delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">Required</div>
                 </div>
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={32.8} suffix="%" delay={0} />
+                    <AnimatedCounter target={40.9} suffix="%" delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">% Completed</div>
                 </div>
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={1134} delay={0} />
+                    <AnimatedCounter target={1012} delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">Remaining</div>
                 </div>
@@ -584,7 +603,6 @@ export function ProgressDashboard() {
           </div>
         </div>
 
-        {/* Right Column - Direct Reports Table */}
         <div className="lg:w-1/2 flex">
           <ReportTable data={reportData} />
         </div>
