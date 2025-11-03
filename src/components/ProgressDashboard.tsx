@@ -463,7 +463,7 @@ function CertificatePodium() {
                 </motion.div>
               </DialogTrigger>
               
-              <DialogContent className="max-w-md">
+              <DialogContent className="max-w-md !top-[30%]">
                 <DialogHeader>
                   <DialogTitle className="flex items-center gap-2">
                     <Icon className={`w-6 h-6 ${cert.color}`} />
