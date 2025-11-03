@@ -175,15 +175,23 @@ function CertificatePodium() {
         "Jeff Miller (jemille2)",
         "Fowzia Essani (fessani)",
         "Nate Royer (nroyer)",
+        "Teddy Amo (tedamo)",
         "Genevieve Holbrook (jennifed)",
         "Pablo Calvo (pablcalv)",
         "Sourabh Kumar (soukumar)",
         "Udit Chalana (cchalana)",
+        "Sam Culver (sculver)",
         "Adriana Valencia (livalenc)",
+        "Alex Brooks (alexbroo)",
         "Reyna Cerros (rcerros)",
         "Wylie Bindeman (wbindema)",
+        "Sudhir Krishnamurthy (sudhirkr)",
+        "Jack Xia (jaxia)",
         "Shraddha Nagaraj (shranaga)",
+        "Gowri Jayan (gjayan)",
         "Jackie Cao (jingjcao)",
+        "Pragati Jain (pragatja)",
+        "Xin Zhao -X (xinzhao4)",
         "Amit Sah (amisah)",
         "Mike Sanburn",
         "Ellen Chu",
@@ -194,6 +202,7 @@ function CertificatePodium() {
         "Dave Mayer (damayer)",
         "George Mekhael (gmekhael)",
         "Maciej Balon (mabalon)",
+        "Dioni Strickland (districk)",
         "Joe Carino (jcarino)",
         "Lorena Sanchez Chipuli (lorsanch)",
         "Cesar Lopez-Malo (clopezma)",
@@ -213,12 +222,17 @@ function CertificatePodium() {
         "Sagher Chordia",
         "Scott Dorn",
         "David Collins",
-        "Greg Bennett",
         "Brenda Anderson",
         "Rachel Ip",
         "Bernarda Izycka",
+        "Carl Almeida",
         "Jackie Bateman",
         "Ines Barbara",
+        "Peter Wozniczka",
+        "Oksana Karpenko",
+        "Ramamurthy Annaswamy",
+        "Paidala Anusha",
+        "Balaji K",
         "Joana Ramos",
         "Marisela Tapia Morales",
         "Wine Pwint Phiansin",
@@ -231,21 +245,23 @@ function CertificatePodium() {
         "Benjamin Lee",
         "Dhruvi Contractor",
         "Rekha Angepat",
+        "Austin Yount",
         "Omar Sanchez Breton",
         "Martha Rodriguez",
+        "Aiken Keppler",
+        "Holly Norton",
         "Kiran Ramu",
+        "Paola Blanc Murguia",
         "Madhavi Kottapalli",
         "Chris Bergwall",
         "Neeraja Vizaya Kumar",
         "Kien Tran",
-        "Penelope Staebler",
-        "Mark Wyman",
         "Brenda Gonzalez Araya",
         "Karthik Raghotham",
-        "Ariel Morales",
         "Uma Rajaratnam",
         "Ruchika Pahwa",
         "Carey Martin",
+        "Genesis Fajardo",
         "Brandon Rimer",
         "Yachi Tsai",
         "Carolina Galicia",
@@ -260,7 +276,8 @@ function CertificatePodium() {
         "Kasia Podstawka",
         "Rob Williams",
         "Vandna Jain",
-        "Diana Kuster",
+        "Mark Wyman",
+        "Ariel Morales",
         "Talise Richter",
         "Melissa Wong",
         "Maiara De Carvalho Beraldi",
@@ -270,6 +287,7 @@ function CertificatePodium() {
         "Shanmuga Priya Venkatesan",
         "Sumit Jakhar",
         "Ayako Kai",
+        "Xin Shen",
         "Vinaya Nayak",
         "Vidya Karthik",
         "Christian Holobinko",
@@ -287,29 +305,40 @@ function CertificatePodium() {
         "Sandy Zhang",
         "Suthan Setty Gunashekar",
         "Bartlomiej Nowak",
+        "Kamila Lasz",
         "Leslie Patrick Mariadas",
         "Małgorzata Jamro",
         "Tomek Gasior",
         "Aldo Lezama",
         "Amandeep Kataria",
         "Elizabeth Rodriguez",
+        "Gabriela Zepeda Hernandez",
         "Kay Wagner",
+        "Pamela Wong",
         "Christina Thompson",
         "Jordan Brown",
+        "Vidisha Patel",
         "Candelaria Zucca",
         "Janet Ng",
         "Karolina Nalepa",
         "Mahender Manik",
-        "Vidisha Patel",
+        "Greg Bennett",
         "Eduardo Seput",
-        "Cristie Meadows",
         "Anna Ciura",
         "Noeleen Kenny",
+        "Barbara Wolczanska",
         "Lukasz Rawicki",
         "Ricardo Pinto",
+        "Sebastian Brzeski",
+        "Gido Smid",
+        "Agata Matusik",
+        "Roman Morfyd",
         "Iva Kushlyk",
+        "Jana Michlikova",
         "Natalia Wisniowska",
+        "Dili Urazova",
         "Chris Kokos",
+        "Patricia Diaz",
         "Rajiv Gatha"
       ],
       icon: Medal,
@@ -325,11 +354,12 @@ function CertificatePodium() {
         "Jack Xia (jaxia)",
         "Cesar Lopez-Malo (clopezma)",
         "Sofia Saxena",
-        "Greg Bennett",
         "Ruchika Pahwa",
         "Darshana Shet",
         "Amandeep Kataria",
-        "Vidisha Patel"
+        "Vidisha Patel",
+        "Greg Bennett",
+        "Manuel Flores"
       ],
       icon: Trophy,
       height: "h-32"
@@ -340,10 +370,13 @@ function CertificatePodium() {
       bgColor: "bg-[#0A60FF]",
       employees: [
         "Nate Royer (nroyer)",
+        "Teddy Amo (tedamo)",
         "Genevieve Holbrook (jennifed)",
         "Sourabh Kumar (soukumar)",
         "Udit Chalana (cchalana)",
         "Wylie Bindeman (wbindema)",
+        "Jack Xia (jaxia)",
+        "Gowri Jayan (gjayan)",
         "Kunal Kishor (kkishor2)",
         "Sahil Bali (sahbali)",
         "Varuni Garg (vargarg)",
@@ -355,10 +388,10 @@ function CertificatePodium() {
         "Peggy David (pedavid)",
         "Michael Kopec (michakop)",
         "Sofia Saxena",
-        "Greg Bennett",
         "Brenda Anderson",
         "Rachel Ip",
         "Ines Barbara",
+        "Ramamurthy Annaswamy",
         "Neeraja Vizaya Kumar",
         "Kien Tran",
         "Ruchika Pahwa",
@@ -366,14 +399,24 @@ function CertificatePodium() {
         "Carolina Galicia",
         "Manuel Flores",
         "Kelly Byrnes",
+        "Cristie Meadows",
         "Abi Ayedun",
         "Armando Palomino Calero",
+        "Esteban Alvarez Cordero",
+        "Esteban Hernandez",
+        "Fola Odusanya",
+        "Kasia Podstawka",
         "Vandna Jain",
         "Vidya Karthik",
+        "Kyriakos Katsamakis",
         "Darshana Shet",
         "Lu Zhao",
+        "Bartlomiej Nowak",
+        "Małgorzata Jamro",
         "Amandeep Kataria",
-        "Vidisha Patel"
+        "Kay Wagner",
+        "Vidisha Patel",
+        "Greg Bennett"
       ],
       icon: Award,
       height: "h-28"
@@ -491,13 +534,13 @@ function ReportTable({ data }: ReportTableProps) {
                       {getMedalEmoji(index)}{employee.name}
                     </td>
                     <td className="p-2 text-sm text-center border-r border-[#02C8FF]/20 text-[#02C8FF] font-medium">
-                      {employee.beginner}
+                      {employee.beginner}%
                     </td>
                     <td className="p-2 text-sm text-center border-r border-[#02C8FF]/20 text-[#0A60FF] font-medium">
-                      {employee.intermediate}
+                      {employee.intermediate}%
                     </td>
                     <td className="p-2 text-sm text-center text-[#07182D] font-medium">
-                      {employee.overall}
+                      {employee.overall}%
                     </td>
                   </tr>
                 );
@@ -507,13 +550,13 @@ function ReportTable({ data }: ReportTableProps) {
                   Total
                 </td>
                 <td className="p-2 text-sm text-center border-r border-[#02C8FF]/30 font-bold">
-                  51.1
+                  64.3%
                 </td>
                 <td className="p-2 text-sm text-center border-r border-[#02C8FF]/30 font-bold">
-                  10.3
+                  14.4%
                 </td>
                 <td className="p-2 text-sm text-center font-bold">
-                  40.9
+                  51.8%
                 </td>
               </tr>
             </tbody>
@@ -526,12 +569,11 @@ function ReportTable({ data }: ReportTableProps) {
 
 export function ProgressDashboard() {
   const reportData = [
-    { name: "Chris Kokos", beginner: 67.8, intermediate: 18.9, overall: 55.6 },
-    { name: "Patricia Diaz", beginner: 47.6, intermediate: 21.4, overall: 41.1 },
-    { name: "Rajiv Gatha", beginner: 46.8, intermediate: 4.2, overall: 36.1 },
-    { name: "David Collins", beginner: 36.7, intermediate: 13.3, overall: 30.8 },
-    { name: "Eduardo Seput", beginner: 50.5, intermediate: 5.7, overall: 39.3 },
-    { name: "Mohamud Warsame", beginner: 50, intermediate: 0, overall: 37.5 }
+    { name: "Chris Kokos", beginner: 75.0, intermediate: 28.6, overall: 63.4 },
+    { name: "David Collins", beginner: 76.2, intermediate: 17.9, overall: 61.6 },
+    { name: "Eduardo Seput", beginner: 67.6, intermediate: 11.8, overall: 53.7 },
+    { name: "Mohamud Warsame", beginner: 62.5, intermediate: 0.0, overall: 46.9 },
+    { name: "Patricia Diaz", beginner: 63.7, intermediate: 28.6, overall: 54.9 }
   ];
 
   return (
@@ -557,17 +599,17 @@ export function ProgressDashboard() {
               <div className="my-5">
                 <div className="flex justify-between mb-2 font-medium text-[#07182D]">
                   <span>Beginner Courses</span>
-                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#02C8FF]">51.1%</span>
+                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#02C8FF]">64.3%</span>
                 </div>
-                <CourseProgressBar percentage={51.1} current={656} total={1284} type="beginner" delay={500} />
+                <CourseProgressBar percentage={64.3} current={802} total={1248} type="beginner" delay={500} />
               </div>
 
               <div className="my-5">
                 <div className="flex justify-between mb-2 font-medium text-[#07182D]">
                   <span>Intermediate Courses</span>
-                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#0A60FF]">10.3%</span>
+                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#0A60FF]">14.4%</span>
                 </div>
-                <CourseProgressBar percentage={10.3} current={44} total={428} type="intermediate" delay={800} />
+                <CourseProgressBar percentage={14.4} current={60} total={416} type="intermediate" delay={800} />
               </div>
             </div>
 
@@ -576,25 +618,25 @@ export function ProgressDashboard() {
               <div className="flex justify-around flex-wrap gap-4">
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={700} delay={0} />
+                    <AnimatedCounter target={862} delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">Completed</div>
                 </div>
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={1712} delay={0} />
+                    <AnimatedCounter target={1664} delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">Required</div>
                 </div>
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={40.9} suffix="%" delay={0} />
+                    <AnimatedCounter target={51.8} suffix="%" delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">% Completed</div>
                 </div>
                 <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
                   <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={1012} delay={0} />
+                    <AnimatedCounter target={802} delay={0} />
                   </div>
                   <div className="text-xs text-[#07182D] mt-1">Remaining</div>
                 </div>
