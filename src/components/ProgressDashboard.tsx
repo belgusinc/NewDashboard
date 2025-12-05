@@ -533,6 +533,91 @@ function CertificatePodium() {
   );
 }
 
+interface PromptWinner {
+  week: string;
+  winner: string;
+  title: string;
+}
+
+function PromptOfTheWeekWinners() {
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [hoveredRow, setHoveredRow] = useState<number | null>(null);
+
+  const winners: PromptWinner[] = [
+    { week: "3-Dec-25", winner: "Kasia Podstawka", title: "Draft an Introduction Email" },
+    { week: "19-Nov-25", winner: "Aldo Lezama", title: "Automate Weekly Bookings Report" },
+    { week: "12-Nov-25", winner: "Sofia Saxena", title: "Cisco Stock Momentum Analysis" }
+  ];
+
+  const handleRowClick = () => {
+    setShowConfetti(true);
+  };
+
+  return (
+    <div className="mb-8 mx-auto max-w-4xl p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] border-l-4 border-[#02C8FF] bg-[#FFFFFF]">
+      <Confetti isVisible={showConfetti} onComplete={() => setShowConfetti(false)} />
+      
+      <h3 className="mt-0 text-[#07182D] text-lg border-b-2 border-[#02C8FF]/20 pb-2.5 mb-6 text-center">
+        🎯 Prompt of the Week Winners
+      </h3>
+      
+      <div className="overflow-hidden rounded-lg">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="bg-[#07182D] text-white">
+              <th className="text-left p-3 text-sm font-medium">Week</th>
+              <th className="text-left p-3 text-sm font-medium">Winner</th>
+              <th className="text-left p-3 text-sm font-medium">Title</th>
+              <th className="text-center p-3 text-sm font-medium">Link</th>
+            </tr>
+          </thead>
+          <tbody className="bg-[#FFFFFF]">
+            {winners.map((winner, index) => (
+              <motion.tr
+                key={index}
+                className={`transition-all duration-300 ${
+                  index % 2 === 0 ? "bg-[#02C8FF]/5" : "bg-[#FFFFFF]"
+                } ${hoveredRow === index ? "bg-[#02C8FF]/10" : ""}`}
+                onMouseEnter={() => setHoveredRow(index)}
+                onMouseLeave={() => setHoveredRow(null)}
+                whileHover={{ scale: 1.01 }}
+              >
+                <td className="p-3 text-sm font-medium text-[#07182D] border-r border-[#02C8FF]/20">
+                  {winner.week}
+                </td>
+                <td className="p-3 text-sm font-semibold text-[#02C8FF] border-r border-[#02C8FF]/20">
+                  🏆 {winner.winner}
+                </td>
+                <td className="p-3 text-sm text-[#07182D] border-r border-[#02C8FF]/20">
+                  {winner.title}
+                </td>
+                <td className="p-3 text-center">
+                  <a
+                    href="https://cisco.sharepoint.com/sites/CXOpsFinanceAICentral/SitePages/Prompt-of-the-Week-Winners.aspx?csf=1&web=1&e=C6Hvo2&CID=3d16a9c6-ce3e-43ab-bdda-28372813c19a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block font-bold py-1 px-2 rounded-xl text-xs text-white bg-[#02C8FF] hover:bg-[#0A60FF] transition-colors duration-200"
+                    onClick={(e: React.MouseEvent) => {
+                      e.stopPropagation();
+                      handleRowClick();
+                    }}
+                  >
+                    View
+                  </a>
+                </td>
+              </motion.tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      
+      <div className="mt-4 text-center text-xs text-[#07182D]/60">
+        Click any row to celebrate! 🎉
+      </div>
+    </div>
+  );
+}
+
 function ReportTable({ data }: ReportTableProps) {
   return (
     <div className="overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] border-l-4 border-[#02C8FF] bg-[#FFFFFF] flex-1">
@@ -618,6 +703,8 @@ export function ProgressDashboard() {
       </div>
       
       <CertificatePodium />
+      
+      <PromptOfTheWeekWinners />
       
       <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch mt-8">
         <div className="lg:w-1/2 flex">
