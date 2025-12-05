@@ -575,12 +575,14 @@ function PromptOfTheWeekWinners() {
             {winners.map((winner, index) => (
               <motion.tr
                 key={index}
-                className={`transition-all duration-300 ${
+                className={`cursor-pointer transition-all duration-300 ${
                   index % 2 === 0 ? "bg-[#02C8FF]/5" : "bg-[#FFFFFF]"
                 } ${hoveredRow === index ? "bg-[#02C8FF]/10" : ""}`}
                 onMouseEnter={() => setHoveredRow(index)}
                 onMouseLeave={() => setHoveredRow(null)}
+                onClick={handleRowClick}
                 whileHover={{ scale: 1.01 }}
+                whileTap={{ scale: 0.99 }}
               >
                 <td className="p-3 text-sm font-medium text-[#07182D] border-r border-[#02C8FF]/20">
                   {winner.week}
