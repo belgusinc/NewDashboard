@@ -668,13 +668,13 @@ function ReportTable({ data }: ReportTableProps) {
                   Total
                 </td>
                 <td className="p-2 text-sm text-center border-r border-[#02C8FF]/30 font-bold">
-                  99.4%
+                  100.0%
                 </td>
                 <td className="p-2 text-sm text-center border-r border-[#02C8FF]/30 font-bold">
-                  32.7%
+                  100.0%
                 </td>
                 <td className="p-2 text-sm text-center font-bold">
-                  82.8%
+                  100.0%
                 </td>
               </tr>
             </tbody>
@@ -687,11 +687,11 @@ function ReportTable({ data }: ReportTableProps) {
 
 export function ProgressDashboard() {
   const reportData = [
-    { name: "Chris Kokos", beginner: 100.0, intermediate: 39.0, overall: 84.8 },
-    { name: "David Collins", beginner: 98.6, intermediate: 25.0, overall: 80.2 },
-    { name: "Eduardo Seput", beginner: 100.0, intermediate: 13.6, overall: 78.4 },
-    { name: "Mohamud Warsame", beginner: 100.0, intermediate: 0.0, overall: 75.0 },
-    { name: "Patricia Diaz", beginner: 98.3, intermediate: 32.8, overall: 81.9 }
+    { name: "Chris Kokos", beginner: 100.0, intermediate: 100.0, overall: 100.0 },
+    { name: "David Collins", beginner: 100.0, intermediate: 100.0, overall: 100.0 },
+    { name: "Eduardo Seput", beginner: 100.0, intermediate: 100.0, overall: 100.0 },
+    { name: "Mohamud Warsame", beginner: 100.0, intermediate: 100.0, overall: 100.0 },
+    { name: "Patricia Diaz", beginner: 100.0, intermediate: 100.0, overall: 100.0 }
   ];
 
   return (
@@ -704,68 +704,8 @@ export function ProgressDashboard() {
         />
       </div>
       
-      <CertificatePodium />
-      
-      <PromptOfTheWeekWinners />
-      
-      <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch mt-8">
-        <div className="lg:w-1/2 flex">
-          <div className="p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] border-l-4 border-[#02C8FF] bg-[#FFFFFF] flex-1">
-            <h3 className="mt-0 text-[#07182D] text-lg border-b-2 border-[#02C8FF]/20 pb-2.5 mb-5 text-center">
-              📊 Expected Course Progress Dashboard
-            </h3>
-
-            <div className="space-y-5">
-              <div className="my-5">
-                <div className="flex justify-between mb-2 font-medium text-[#07182D]">
-                  <span>Beginner Courses</span>
-                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#02C8FF]">99.4%</span>
-                </div>
-                <CourseProgressBar percentage={99.4} current={1241} total={1248} type="beginner" delay={500} />
-              </div>
-
-              <div className="my-5">
-                <div className="flex justify-between mb-2 font-medium text-[#07182D]">
-                  <span>Intermediate Courses</span>
-                  <span className="font-bold py-1 px-2 rounded-xl text-xs text-[#0A60FF]">32.7%</span>
-                </div>
-                <CourseProgressBar percentage={32.7} current={136} total={416} type="intermediate" delay={800} />
-              </div>
-            </div>
-
-            <div className="mt-7 p-5 bg-gradient-to-br from-[#02C8FF]/5 to-[#0A60FF]/5 rounded-xl text-center">
-              <h4 className="text-[#02C8FF] mb-4 text-base">Summary Statistics</h4>
-              <div className="flex justify-around flex-wrap gap-4">
-                <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
-                  <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={1377} delay={0} />
-                  </div>
-                  <div className="text-xs text-[#07182D] mt-1">Completed</div>
-                </div>
-                <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
-                  <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={1664} delay={0} />
-                  </div>
-                  <div className="text-xs text-[#07182D] mt-1">Required</div>
-                </div>
-                <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
-                  <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={82.8} suffix="%" delay={0} />
-                  </div>
-                  <div className="text-xs text-[#07182D] mt-1">% Completed</div>
-                </div>
-                <div className="bg-[#FFFFFF] p-4 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.1)] min-w-[80px]">
-                  <div className="text-xl font-bold text-[#02C8FF]">
-                    <AnimatedCounter target={287} delay={0} />
-                  </div>
-                  <div className="text-xs text-[#07182D] mt-1">Remaining</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="lg:w-1/2 flex">
+      <div className="flex justify-center mt-8">
+        <div className="w-full max-w-3xl">
           <ReportTable data={reportData} />
         </div>
       </div>
